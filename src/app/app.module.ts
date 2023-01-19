@@ -17,6 +17,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { PizzaCardComponent } from './pizza-card/pizza-card.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     CartComponent,
-    DashboardComponent
+    DashboardComponent,
+    PizzaCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatToolbarModule,MatIconModule,MatButtonModule,MatFormFieldModule,MatCardModule,
-    MatInputModule,ReactiveFormsModule,FormsModule
+    MatInputModule,ReactiveFormsModule,FormsModule,MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
