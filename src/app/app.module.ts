@@ -19,6 +19,9 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { PizzaCardComponent } from './pizza-card/pizza-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AfterLoginDashboardComponent } from './after-login-dashboard/after-login-dashboard.component';
+import { AfterLoginHeaderComponent } from './after-login-header/after-login-header.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +31,15 @@ import { PizzaCardComponent } from './pizza-card/pizza-card.component';
     RegisterComponent,
     CartComponent,
     DashboardComponent,
-    PizzaCardComponent
+    PizzaCardComponent,
+    AfterLoginDashboardComponent,
+    AfterLoginHeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatToolbarModule,MatIconModule,MatButtonModule,MatFormFieldModule,MatCardModule,
-    MatInputModule,ReactiveFormsModule,FormsModule,MatGridListModule
+    MatInputModule,ReactiveFormsModule,FormsModule,MatGridListModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

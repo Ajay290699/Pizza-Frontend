@@ -11,3 +11,8 @@ img{
     width: 450px;
     padding-left: 30px;
 }
+h2{
+    padding-left: 100px;
+    background-color: rgb(90, 84, 84);
+    color: orange;
+}
